@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.dgc_Rpg_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.dgc.MODEL.TipoParametroEntity</class>
+    <class>com.dgc.MODEL.ParametroEntity</class>
+    <class>com.dgc.MODEL.PlanEntity</class>
+    <class>com.dgc.MODEL.ModuloEntity</class>
+    <class>com.dgc.MODEL.HuellaEntity</class>
+    <class>com.dgc.MODEL.OpcionModuloEntity</class>
+    <class>com.dgc.MODEL.PersonaEntity</class>
+    <class>com.dgc.MODEL.RolEntity</class>
+    <class>com.dgc.MODEL.TiqueteraEntity</class>
+    <class>com.dgc.MODEL.UsuarioEntity</class>
+    <class>com.dgc.MODEL.AsistenciaEntity</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql.cvyodnfcgrv5.us-west-2.rds.amazonaws.com:3306/TIQUETERA?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="789789789"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

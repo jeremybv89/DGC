@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://mysql.cvyodnfcgrv5.us-west-2.rds.amazonaws.com:3306/TIQUETERA?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">789789789</property>
+    <property name="hibernate.show_sql">false</property>
+   <!---  mantenga 1 sola coneccion  -->
+  <property name="connection.pool_size">1</property>
+   <!---  crea un hilo de coleccion -->
+  <property name="hibernate.current_session_context_class">thread</property>
+    <!---  Se utiliza para mapear desde tokens en consultas Hibernate a tokens SQL (tokens podrían ser nombres de función o literales, por ejemplo). -->
+  <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+  
+  
+     <mapping class="com.dgc.MODEL.HuellaEntity" /> 
+     <mapping class="com.dgc.MODEL.ModuloEntity" />
+     <mapping class="com.dgc.MODEL.ParametroEntity" />
+     <mapping class="com.dgc.MODEL.RolEntity" />
+     <mapping class="com.dgc.MODEL.PlanEntity" />
+     <mapping class="com.dgc.MODEL.TipoParametroEntity" />
+     <mapping class="com.dgc.MODEL.OpcionModuloEntity" />
+     <mapping class="com.dgc.MODEL.TiqueteraEntity" />
+     <mapping class="com.dgc.MODEL.AsistenciaEntity" />
+     <mapping class="com.dgc.MODEL.PersonaEntity" />
+     <mapping class="com.dgc.MODEL.UsuarioEntity" />
+     </session-factory>
+</hibernate-configuration>
