@@ -15,7 +15,7 @@ import java.util.List;
  *
  * @author lenovo 1
  */
-//Putas harry
+//Putas harry 
 public class Main {
     public static void main(String[] args) {
         TipoParametroEntity tp = new TipoParametroEntity();
