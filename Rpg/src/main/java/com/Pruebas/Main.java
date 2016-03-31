@@ -20,7 +20,7 @@ public class Main {
         TipoParametroEntity tp = new TipoParametroEntity();
         tp.setDescripcion("Diablo");
         tp.setEstado("A");
-        
+        // prueba
         TipoParametroDao tpDao = new TipoParametroDao();
         tpDao.persist(tp);
         
