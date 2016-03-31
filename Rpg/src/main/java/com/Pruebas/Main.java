@@ -21,6 +21,7 @@ public class Main {
         tp.setDescripcion("Diablo");
         tp.setEstado("A");
         // prueba
+        //cfambio
         TipoParametroDao tpDao = new TipoParametroDao();
         tpDao.persist(tp);
         
