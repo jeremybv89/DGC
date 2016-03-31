@@ -18,6 +18,7 @@ import java.util.List;
 //Putas harry 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Hola");
         TipoParametroEntity tp = new TipoParametroEntity();
         tp.setDescripcion("Diablo");
         tp.setEstado("A");
